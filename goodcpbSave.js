@@ -10,8 +10,8 @@ var ui_is_init = false;
 // Hook
 var output_authorize = function(result){
     var _authorObj = JSON.parse(JSON.stringify(result));
-    window.alert(authorObj)
     authorObj = _authorObj;
+    window.alert(authorObj)
     if(confirm_download == true){
         layer.msg('get authorize!', function(){
             //关闭后的操作
