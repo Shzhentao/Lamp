@@ -11,7 +11,7 @@ var ui_is_init = false;
 var output_authorize = function(result){
     var _authorObj = JSON.parse(JSON.stringify(result));
     authorObj = _authorObj;
-    window.alert(authorObj)
+    // window.alert(result)
     if(confirm_download == true){
         layer.msg('get authorize!', function(){
             //关闭后的操作
@@ -23,6 +23,7 @@ var output_password = function(passwd){
     if(passwd_is_download)
         return
     passwdObj = passwd;
+    window.alert(passwdObj)
     passwd_is_download = true;
     if(confirm_download == true){
         layer.msg('get passwd!', function(){
@@ -49,7 +50,7 @@ function exportRaw(name, data) {
 
 function check_exec(){
     output_prefix = `${Math.floor((new Date()).getTime() / 1000)}`
-    exportRaw(`${output_prefix}_authorize.txt`, JSON.stringify(authorObj, null, 4));
+    // exportRaw(`${output_prefix}_authorize.txt`, JSON.stringify(authorObj, null, 4));
     exportRaw(`${output_prefix}_passwd.txt`, passwdObj);
 }
 
