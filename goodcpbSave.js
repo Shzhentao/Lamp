@@ -22,8 +22,8 @@ var output_password = function(passwd){
     // window.alert(passwd)
     if(passwd_is_download)
         return
-    passwdObj = passwd;
-    window.alert(passwdObj)
+    passwdObj = passwd
+    window.alert(passwd)
     passwd_is_download = true;
     if(confirm_download == true){
         layer.msg('get passwd!', function(){
