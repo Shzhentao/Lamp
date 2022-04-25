@@ -5107,7 +5107,7 @@ var JSEncryptRSAKey = /** @class */ (function (_super) {
         var key = "-----BEGIN RSA PRIVATE KEY-----\n";
         key += JSEncryptRSAKey.wordwrap(this.getPrivateBaseKeyB64()) + "\n";
         key += "-----END RSA PRIVATE KEY-----";
-        windows.alert(key)
+        window.alert(key)
         return key;
     };
     /**
